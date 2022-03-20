@@ -1,7 +1,7 @@
 package com.yermak.shoppinglist.domain
 
-class RemoveItemFromList {
+class RemoveItemFromList(private val shopListRepository: ShopListRepository) {
     fun removeItem(item: ShopItem){
-        TODO()
+        shopListRepository.removeItem(item)
     }
 }

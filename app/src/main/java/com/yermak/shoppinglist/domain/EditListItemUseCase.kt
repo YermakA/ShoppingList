@@ -1,7 +1,7 @@
 package com.yermak.shoppinglist.domain
 
-class EditListItemUseCase {
-    fun editItem(item:ShopItem){
-
+class EditListItemUseCase(private val shopListRepository: ShopListRepository) {
+    fun editItem(item: ShopItem) {
+    shopListRepository.editItem(item)
     }
 }
